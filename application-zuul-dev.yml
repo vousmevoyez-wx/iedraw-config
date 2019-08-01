@@ -1,0 +1,11 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: zuul-gateway
+zuul:
+  ignored-services: "*"
+  prefix: "/services"
+  routes: #路由的配置
+    user.serviceId: plat-parent
+    user.path: /user/**

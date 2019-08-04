@@ -9,3 +9,5 @@ zuul:
   routes: #路由的配置
     user.serviceId: plat-parent
     user.path: /plat/**
+    draw.serviceId: iedraw-parent
+    draw.path: /draw/**
